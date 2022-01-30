@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  transition: background-color 0.5s ease-out;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 15px 0px;
+  margin: 0 auto;
+}
+
+.btn {
+  outline: 0;
+  border: 0;
+  border-radius: 50px;
+  padding: 15px;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background-color: #805ad5;
+  transition: all 1s ease-out;
+}
+
+.btn img {
+  width: 30px;
+  height: 30px;
+}
+
+.light {
+  background-color: rgb(240, 231, 219);
+  color: rgb(32, 32, 35);
+}
+
+.dark {
+  background-color: rgb(32, 32, 35);
+  color: rgb(240, 231, 219);
+}
+
+.animate {
+  animation: rotating 0.5s ease;
+}
+
+@keyframes rotating {
+  from {
+    opacity: 0;
+    transform: rotateX(180deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+}
+
+h1 {
+  text-align: center;
+  font-size: 100px;
+  letter-spacing: 10px;
+}
+
+.active {
+  background-color: rgb(255, 255, 0) !important ;
+}
